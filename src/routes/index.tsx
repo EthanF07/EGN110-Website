@@ -319,7 +319,7 @@ function LandingPage() {
             <h2 className="kf-h2">Form feedback,<br /><em>woven in.</em></h2>
             <p className="kf-section-body">
               ProForm's gyroscopes and surface EMGs detect muscle activity and track
-              body position across your torso, arms and core — translating raw movement
+              body position across your torso, arms, legs, and core — translating raw movement
               into precise coaching cues delivered through haptic buzz and app alerts,
               with live form suggestions powered by our software.
             </p>
@@ -351,17 +351,17 @@ function LandingPage() {
                 {
                   icon: <IconZap />,
                   title: 'Muscle Activation Mapping',
-                  body: 'See which muscle groups are firing — and which are compensating. Fix imbalances that hide in plain sight.',
+                  body: 'sEMGS let you see which muscle groups are firing — and which are compensating. Fix imbalances that hide in plain sight.',
+                },
+                {
+                  icon: <IconTrendingUp />,
+                  title: 'Consistent Form Tracking',
+                  body: 'Form quality and position constantly being measured by gyroscopes - ensures you are on the right track. Get the feedback you deserve',
                 },
                 {
                   icon: <IconShield />,
                   title: 'Injury Risk Scoring',
                   body: 'Cumulative load and asymmetry patterns build a live injury-risk score. Know when to push and when to pull back.',
-                },
-                {
-                  icon: <IconTrendingUp />,
-                  title: 'Progress Benchmarking',
-                  body: 'Form quality scores tracked over weeks. Watch technique solidify as strength grows — with data to prove it.',
                 },
                 {
                   icon: <IconWifi />,
@@ -395,8 +395,8 @@ function LandingPage() {
             <p className="kf-overline">Integrations</p>
             <h2 className="kf-h2">Works inside the<br /><em>apps you train with.</em></h2>
             <p className="kf-section-body">
-              ProForm doesn't replace your training app — it powers it with a layer
-              of real movement data. Four launch integrations, with more on the way.
+              ProForm doesn't replace your training app, it powers it with a layer
+              of real time feedback on top. Four launch integrations planned, with more on the way.
             </p>
           </div>
 
@@ -469,8 +469,10 @@ function LandingPage() {
         >
           <p className="kf-overline kf-overline-light">Early Access</p>
           <h2 className="kf-cta-h2">
-            Train smarter.<br />
-            <span className="kf-accent">Move better.</span>
+            <div>Protect your</div>
+            <span className="kf-accent">body.</span><br />
+            <div>Perfect your</div>
+            <span className="kf-accent">form.</span>
           </h2>
           <p className="kf-cta-body">
             ProForm ships Q3 2026. Reserve your unit now and lock in
