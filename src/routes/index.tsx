@@ -34,8 +34,8 @@ function IconShield() {
 function IconTrendingUp() {
   return (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6">
-      <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" />
-      <polyline points="17 6 23 6 23 12" />
+      <circle cx="11" cy="11" r="6" />
+      <line x1="21" y1="21" x2="16.65" y2="16.65" />
     </svg>
   )
 }
@@ -86,7 +86,7 @@ function WearableDevice() {
         />
 
         {/* Sensor grid lines */}
-        <g opacity="0.25" stroke="#b8ff57" strokeWidth="0.5">
+        <g opacity="0.25" stroke="#ff5900" strokeWidth="0.5">
           <line x1="80" y1="160" x2="260" y2="160" />
           <line x1="80" y1="200" x2="260" y2="200" />
           <line x1="80" y1="240" x2="260" y2="240" />
@@ -111,7 +111,7 @@ function WearableDevice() {
             cx={x}
             cy={y}
             r="4"
-            fill="#b8ff57"
+            fill="#ff5900"
             opacity="0.7"
             className="kf-sensor-dot"
             style={{ animationDelay: `${(i * 0.11).toFixed(2)}s` }}
@@ -119,15 +119,15 @@ function WearableDevice() {
         ))}
 
         {/* Central processor unit */}
-        <rect x="148" y="198" width="44" height="44" rx="4" fill="#0d0d10" stroke="#b8ff57" strokeWidth="1.5" />
-        <rect x="156" y="206" width="28" height="28" rx="2" fill="#141418" stroke="#b8ff57" strokeOpacity="0.4" strokeWidth="1" />
-        <text x="170" y="225" textAnchor="middle" fill="#b8ff57" fontSize="8" fontFamily="monospace" letterSpacing="1">CPU</text>
+        <rect x="148" y="198" width="44" height="44" rx="4" fill="#0d0d10" stroke="#ff5900" strokeWidth="1.5" />
+        <rect x="156" y="206" width="28" height="28" rx="2" fill="#141418" stroke="#ff5900" strokeOpacity="0.4" strokeWidth="1" />
+        <text x="170" y="225" textAnchor="middle" fill="#ff5900" fontSize="8" fontFamily="monospace" letterSpacing="1">CPU</text>
 
         {/* Data pulse line */}
         <polyline
           points="60,270 80,270 95,250 115,290 130,255 145,275 165,260 185,280 200,265 215,275 235,268 260,268 280,268"
           fill="none"
-          stroke="#b8ff57"
+          stroke="#ff5900"
           strokeWidth="1.5"
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -136,19 +136,19 @@ function WearableDevice() {
         />
 
         {/* Sleeve sensors */}
-        <circle cx="35" cy="200" r="5" fill="#b8ff57" opacity="0.6" className="kf-sensor-dot" style={{ animationDelay: '0.5s' }} />
-        <circle cx="305" cy="200" r="5" fill="#b8ff57" opacity="0.6" className="kf-sensor-dot" style={{ animationDelay: '0.7s' }} />
-        <circle cx="30" cy="240" r="4" fill="#b8ff57" opacity="0.4" className="kf-sensor-dot" style={{ animationDelay: '0.9s' }} />
-        <circle cx="310" cy="240" r="4" fill="#b8ff57" opacity="0.4" className="kf-sensor-dot" style={{ animationDelay: '1.1s' }} />
+        <circle cx="35" cy="200" r="5" fill="#ff5900" opacity="0.6" className="kf-sensor-dot" style={{ animationDelay: '0.5s' }} />
+        <circle cx="305" cy="200" r="5" fill="#ff5900" opacity="0.6" className="kf-sensor-dot" style={{ animationDelay: '0.7s' }} />
+        <circle cx="30" cy="240" r="4" fill="#ff5900" opacity="0.4" className="kf-sensor-dot" style={{ animationDelay: '0.9s' }} />
+        <circle cx="310" cy="240" r="4" fill="#ff5900" opacity="0.4" className="kf-sensor-dot" style={{ animationDelay: '1.1s' }} />
 
         {/* Live label */}
-        <rect x="238" y="156" width="40" height="18" rx="3" fill="#b8ff57" />
+        <rect x="238" y="156" width="40" height="18" rx="3" fill="#ff5900" />
         <text x="258" y="168" textAnchor="middle" fill="#0a0a0b" fontSize="8" fontWeight="bold" fontFamily="monospace" letterSpacing="2">LIVE</text>
 
         {/* Form status bar */}
         <rect x="80" y="360" width="180" height="8" rx="4" fill="#1e1e24" />
-        <rect x="80" y="360" width="138" height="8" rx="4" fill="#b8ff57" opacity="0.9" className="kf-form-bar" />
-        <text x="170" y="354" textAnchor="middle" fill="#b8ff57" fontSize="7" fontFamily="monospace" letterSpacing="1" opacity="0.7">FORM SCORE</text>
+        <rect x="80" y="360" width="138" height="8" rx="4" fill="#ff5900" opacity="0.9" className="kf-form-bar" />
+        <text x="170" y="354" textAnchor="middle" fill="#ff5900" fontSize="7" fontFamily="monospace" letterSpacing="1" opacity="0.7">FORM SCORE</text>
       </svg>
 
       {/* Floating data chips */}
@@ -264,9 +264,9 @@ function LandingPage() {
               form breaks.
             </h1>
             <p className="kf-hero-body">
-              ProForm is an intelligent athletic shirt embedded with 23 bio-mechanical
-              sensors that analyzes your movement in real time — catching bad form before
-              it becomes injury.
+              ProForm is an intelligent athletic shirt embedded with gyroscopes and
+              surface EMGs that detect muscle activity and track body position in real
+              time — with software that suggests changes to your form live.
             </p>
             <div className="kf-hero-actions">
               <a href="#cta" className="kf-btn-primary">Reserve yours</a>
@@ -318,9 +318,10 @@ function LandingPage() {
             <p className="kf-overline">Technology</p>
             <h2 className="kf-h2">Form feedback,<br /><em>woven in.</em></h2>
             <p className="kf-section-body">
-              ProForm's sensor mesh captures 340+ data points per second across your
-              torso, arms and core — translating raw movement into precise coaching cues
-              delivered through haptic buzz and app alerts.
+              ProForm's gyroscopes and surface EMGs detect muscle activity and track
+              body position across your torso, arms, legs, and core — translating raw movement
+              into precise coaching cues delivered through haptic buzz and app alerts,
+              with live form suggestions powered by our software.
             </p>
           </div>
 
@@ -350,17 +351,17 @@ function LandingPage() {
                 {
                   icon: <IconZap />,
                   title: 'Muscle Activation Mapping',
-                  body: 'See which muscle groups are firing — and which are compensating. Fix imbalances that hide in plain sight.',
+                  body: 'sEMGS let you see which muscle groups are firing — and which are compensating. Fix imbalances that hide in plain sight.',
+                },
+                {
+                  icon: <IconTrendingUp />,
+                  title: 'Consistent Form Tracking',
+                  body: 'Form quality and position constantly being measured by gyroscopes - ensures you are on the right track. Get the feedback you deserve',
                 },
                 {
                   icon: <IconShield />,
                   title: 'Injury Risk Scoring',
                   body: 'Cumulative load and asymmetry patterns build a live injury-risk score. Know when to push and when to pull back.',
-                },
-                {
-                  icon: <IconTrendingUp />,
-                  title: 'Progress Benchmarking',
-                  body: 'Form quality scores tracked over weeks. Watch technique solidify as strength grows — with data to prove it.',
                 },
                 {
                   icon: <IconWifi />,
@@ -394,8 +395,8 @@ function LandingPage() {
             <p className="kf-overline">Integrations</p>
             <h2 className="kf-h2">Works inside the<br /><em>apps you train with.</em></h2>
             <p className="kf-section-body">
-              ProForm doesn't replace your training app — it powers it with a layer
-              of real movement data. Four launch integrations, with more on the way.
+              ProForm doesn't replace your training app, it powers it with a layer
+              of real time feedback on top. Four launch integrations planned, with more on the way.
             </p>
           </div>
 
@@ -468,8 +469,10 @@ function LandingPage() {
         >
           <p className="kf-overline kf-overline-light">Early Access</p>
           <h2 className="kf-cta-h2">
-            Train smarter.<br />
-            <span className="kf-accent">Move better.</span>
+            <div>Protect your</div>
+            <span className="kf-accent">body.</span><br />
+            <div>Perfect your</div>
+            <span className="kf-accent">form.</span>
           </h2>
           <p className="kf-cta-body">
             ProForm ships Q3 2026. Reserve your unit now and lock in
