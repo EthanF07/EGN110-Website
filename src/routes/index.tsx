@@ -55,7 +55,7 @@ function IconCpu() {
   return (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6">
       <rect x="4" y="4" width="16" height="16" rx="2" />
-      <rect x="9" y="9" width="6" height="6" />
+      <rect x="55" y="9" width="6" height="6" />
       <line x1="9" y1="1" x2="9" y2="4" /><line x1="15" y1="1" x2="15" y2="4" />
       <line x1="9" y1="20" x2="9" y2="23" /><line x1="15" y1="20" x2="15" y2="23" />
       <line x1="20" y1="9" x2="23" y2="9" /><line x1="20" y1="14" x2="23" y2="14" />
@@ -174,25 +174,25 @@ const partnerApps = [
   {
     name: 'Nike Training Club',
     category: 'Full-Body Training',
-    description: 'Stream KinetiForm movement data directly into Nike Training Club workouts. Real-time form corrections overlay on guided sessions — so every bodyweight squat, lunge, and burpee gets biomechanical feedback matched to the drill.',
+    description: 'Stream ProForm movement data directly into Nike Training Club workouts. Real-time form corrections overlay on guided sessions — so every bodyweight squat, lunge, and burpee gets biomechanical feedback matched to the drill.',
     color: '#f7461f',
   },
   {
     name: 'FitOn',
     category: 'Free Guided Workouts',
-    description: 'KinetiForm supercharges FitOn\'s free video workouts with live form scoring. Whether it\'s HIIT, Pilates, or strength training, sensor data grades every rep so you get personal-trainer-level feedback without the price tag.',
+    description: 'ProForm supercharges FitOn\'s free video workouts with live form scoring. Whether it\'s HIIT, Pilates, or strength training, sensor data grades every rep so you get personal-trainer-level feedback without the price tag.',
     color: '#00c9a7',
   },
   {
     name: 'Strong',
     category: 'Strength & Weight Tracking',
-    description: 'Every set logged in Strong gets paired with KinetiForm form-quality data. Track not just weight and reps but how cleanly you moved — so progressive overload decisions are based on technique, not ego.',
+    description: 'Every set logged in Strong gets paired with ProForm form-quality data. Track not just weight and reps but how cleanly you moved — so progressive overload decisions are based on technique, not ego.',
     color: '#4a9eff',
   },
   {
     name: 'Planet Fitness',
     category: 'Gym & Circuit Training',
-    description: 'KinetiForm integrates with the Planet Fitness app to guide members through machine circuits and free-weight zones with real-time posture cues — making every gym visit safer and more effective, no matter your experience level.',
+    description: 'ProForm integrates with the Planet Fitness app to guide members through machine circuits and free-weight zones with real-time posture cues — making every gym visit safer and more effective, no matter your experience level.',
     color: '#7b2d8e',
   },
 ]
@@ -239,8 +239,8 @@ function LandingPage() {
       <nav className="kf-nav">
         <div className="kf-nav-inner">
           <div className="kf-logo">
-            <span className="kf-logo-mark">K</span>
-            <span className="kf-logo-text">KinetiForm</span>
+            <span className="kf-logo-mark">P</span>
+            <span className="kf-logo-text">ProForm</span>
           </div>
           <div className="kf-nav-links">
             <a href="#features" className="kf-nav-link">Technology</a>
@@ -264,7 +264,7 @@ function LandingPage() {
               form breaks.
             </h1>
             <p className="kf-hero-body">
-              KinetiForm is an intelligent athletic shirt embedded with 23 bio-mechanical
+              ProForm is an intelligent athletic shirt embedded with 23 bio-mechanical
               sensors that analyzes your movement in real time — catching bad form before
               it becomes injury.
             </p>
@@ -318,7 +318,7 @@ function LandingPage() {
             <p className="kf-overline">Technology</p>
             <h2 className="kf-h2">Form feedback,<br /><em>woven in.</em></h2>
             <p className="kf-section-body">
-              KinetiForm's sensor mesh captures 340+ data points per second across your
+              ProForm's sensor mesh captures 340+ data points per second across your
               torso, arms and core — translating raw movement into precise coaching cues
               delivered through haptic buzz and app alerts.
             </p>
@@ -394,7 +394,7 @@ function LandingPage() {
             <p className="kf-overline">Integrations</p>
             <h2 className="kf-h2">Works inside the<br /><em>apps you train with.</em></h2>
             <p className="kf-section-body">
-              KinetiForm doesn't replace your training app — it powers it with a layer
+              ProForm doesn't replace your training app — it powers it with a layer
               of real movement data. Four launch integrations, with more on the way.
             </p>
           </div>
@@ -472,7 +472,7 @@ function LandingPage() {
             <span className="kf-accent">Move better.</span>
           </h2>
           <p className="kf-cta-body">
-            KinetiForm ships Q3 2026. Reserve your unit now and lock in
+            ProForm ships Q3 2026. Reserve your unit now and lock in
             founding-member pricing — 34% off retail, plus lifetime free app integrations.
           </p>
 
@@ -519,9 +519,9 @@ function LandingPage() {
         <div className="kf-footer-inner">
           <div className="kf-logo">
             <span className="kf-logo-mark">K</span>
-            <span className="kf-logo-text">KinetiForm</span>
+            <span className="kf-logo-text">ProForm</span>
           </div>
-          <p className="kf-footer-copy">© 2026 KinetiForm Inc. — Wear your coach.</p>
+          <p className="kf-footer-copy">© 2026 ProForm Inc. — Wear your coach.</p>
           <div className="kf-footer-links">
             <a href="#">Privacy</a>
             <a href="#">Terms</a>
