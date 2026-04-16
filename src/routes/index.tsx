@@ -86,7 +86,7 @@ function WearableDevice() {
         />
 
         {/* Sensor grid lines */}
-        <g opacity="0.25" stroke="#b8ff57" strokeWidth="0.5">
+        <g opacity="0.25" stroke="#ff5900" strokeWidth="0.5">
           <line x1="80" y1="160" x2="260" y2="160" />
           <line x1="80" y1="200" x2="260" y2="200" />
           <line x1="80" y1="240" x2="260" y2="240" />
@@ -111,7 +111,7 @@ function WearableDevice() {
             cx={x}
             cy={y}
             r="4"
-            fill="#b8ff57"
+            fill="#ff5900"
             opacity="0.7"
             className="kf-sensor-dot"
             style={{ animationDelay: `${(i * 0.11).toFixed(2)}s` }}
@@ -119,15 +119,15 @@ function WearableDevice() {
         ))}
 
         {/* Central processor unit */}
-        <rect x="148" y="198" width="44" height="44" rx="4" fill="#0d0d10" stroke="#b8ff57" strokeWidth="1.5" />
-        <rect x="156" y="206" width="28" height="28" rx="2" fill="#141418" stroke="#b8ff57" strokeOpacity="0.4" strokeWidth="1" />
-        <text x="170" y="225" textAnchor="middle" fill="#b8ff57" fontSize="8" fontFamily="monospace" letterSpacing="1">CPU</text>
+        <rect x="148" y="198" width="44" height="44" rx="4" fill="#0d0d10" stroke="#ff5900" strokeWidth="1.5" />
+        <rect x="156" y="206" width="28" height="28" rx="2" fill="#141418" stroke="#ff5900" strokeOpacity="0.4" strokeWidth="1" />
+        <text x="170" y="225" textAnchor="middle" fill="#ff5900" fontSize="8" fontFamily="monospace" letterSpacing="1">CPU</text>
 
         {/* Data pulse line */}
         <polyline
           points="60,270 80,270 95,250 115,290 130,255 145,275 165,260 185,280 200,265 215,275 235,268 260,268 280,268"
           fill="none"
-          stroke="#b8ff57"
+          stroke="#ff5900"
           strokeWidth="1.5"
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -136,19 +136,19 @@ function WearableDevice() {
         />
 
         {/* Sleeve sensors */}
-        <circle cx="35" cy="200" r="5" fill="#b8ff57" opacity="0.6" className="kf-sensor-dot" style={{ animationDelay: '0.5s' }} />
-        <circle cx="305" cy="200" r="5" fill="#b8ff57" opacity="0.6" className="kf-sensor-dot" style={{ animationDelay: '0.7s' }} />
-        <circle cx="30" cy="240" r="4" fill="#b8ff57" opacity="0.4" className="kf-sensor-dot" style={{ animationDelay: '0.9s' }} />
-        <circle cx="310" cy="240" r="4" fill="#b8ff57" opacity="0.4" className="kf-sensor-dot" style={{ animationDelay: '1.1s' }} />
+        <circle cx="35" cy="200" r="5" fill="#ff5900" opacity="0.6" className="kf-sensor-dot" style={{ animationDelay: '0.5s' }} />
+        <circle cx="305" cy="200" r="5" fill="#ff5900" opacity="0.6" className="kf-sensor-dot" style={{ animationDelay: '0.7s' }} />
+        <circle cx="30" cy="240" r="4" fill="#ff5900" opacity="0.4" className="kf-sensor-dot" style={{ animationDelay: '0.9s' }} />
+        <circle cx="310" cy="240" r="4" fill="#ff5900" opacity="0.4" className="kf-sensor-dot" style={{ animationDelay: '1.1s' }} />
 
         {/* Live label */}
-        <rect x="238" y="156" width="40" height="18" rx="3" fill="#b8ff57" />
+        <rect x="238" y="156" width="40" height="18" rx="3" fill="#ff5900" />
         <text x="258" y="168" textAnchor="middle" fill="#0a0a0b" fontSize="8" fontWeight="bold" fontFamily="monospace" letterSpacing="2">LIVE</text>
 
         {/* Form status bar */}
         <rect x="80" y="360" width="180" height="8" rx="4" fill="#1e1e24" />
-        <rect x="80" y="360" width="138" height="8" rx="4" fill="#b8ff57" opacity="0.9" className="kf-form-bar" />
-        <text x="170" y="354" textAnchor="middle" fill="#b8ff57" fontSize="7" fontFamily="monospace" letterSpacing="1" opacity="0.7">FORM SCORE</text>
+        <rect x="80" y="360" width="138" height="8" rx="4" fill="#ff5900" opacity="0.9" className="kf-form-bar" />
+        <text x="170" y="354" textAnchor="middle" fill="#ff5900" fontSize="7" fontFamily="monospace" letterSpacing="1" opacity="0.7">FORM SCORE</text>
       </svg>
 
       {/* Floating data chips */}
@@ -264,9 +264,9 @@ function LandingPage() {
               form breaks.
             </h1>
             <p className="kf-hero-body">
-              ProForm is an intelligent athletic shirt embedded with 23 bio-mechanical
-              sensors that analyzes your movement in real time — catching bad form before
-              it becomes injury.
+              ProForm is an intelligent athletic shirt embedded with gyroscopes and
+              surface EMGs that detect muscle activity and track body position in real
+              time — with software that suggests changes to your form live.
             </p>
             <div className="kf-hero-actions">
               <a href="#cta" className="kf-btn-primary">Reserve yours</a>
@@ -318,9 +318,10 @@ function LandingPage() {
             <p className="kf-overline">Technology</p>
             <h2 className="kf-h2">Form feedback,<br /><em>woven in.</em></h2>
             <p className="kf-section-body">
-              ProForm's sensor mesh captures 340+ data points per second across your
-              torso, arms and core — translating raw movement into precise coaching cues
-              delivered through haptic buzz and app alerts.
+              ProForm's gyroscopes and surface EMGs detect muscle activity and track
+              body position across your torso, arms and core — translating raw movement
+              into precise coaching cues delivered through haptic buzz and app alerts,
+              with live form suggestions powered by our software.
             </p>
           </div>
 
